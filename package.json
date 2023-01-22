@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Eslint rule that simplifies react component",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SkutinAnton/eslint-plugin-react-component.git"
+  },
   "author": "Skutin Anton",
   "license": "MIT"
 }
