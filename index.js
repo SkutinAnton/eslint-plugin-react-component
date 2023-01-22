@@ -1,5 +1,5 @@
 module.exports = {
   rules: {
-    "arrow-function-brace": require("./src/rules/arrow-function-brace"),
+    "arrow-function-braces": require("./src/rules/arrow-function-braces"),
   },
 };
