@@ -4,6 +4,7 @@ module.exports = {
     docs: {
       description: 'Remove braces and word "return"',
     },
+    fixable: "code",
     messages: {
       removeBraces: 'Remove braces and word "return" in arrow function component',
     },
@@ -22,6 +23,15 @@ module.exports = {
           context.report({
             node,
             messageId: "removeBraces",
+            *fix(fixer) {
+              const openBrace = [node.body.start, node.body.start + 1];
+              const closeBraceAndSemicolon = [node.body.end - 1, node.body.end + 1];
+              const wordReturn = [node.body.body[0].start, node.body.body[0].start + 6];
+
+              yield fixer.removeRange(openBrace);
+              yield fixer.removeRange(closeBraceAndSemicolon);
+              yield fixer.removeRange(wordReturn);
+            },
           });
         }
       }
