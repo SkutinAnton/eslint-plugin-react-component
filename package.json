@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-react-component",
   "version": "1.0.0",
-  "description": "Simplifies a react component",
+  "description": "Eslint rule that simplifies react component",
   "main": "index.js",
   "author": "Skutin Anton",
   "license": "MIT"
