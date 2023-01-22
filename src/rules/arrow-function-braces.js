@@ -1,6 +1,6 @@
 module.exports = {
   meta: {
-    type: "suggestion",
+    type: "layout",
     docs: {
       description: 'Remove braces and word "return"',
     },
